@@ -6,7 +6,7 @@
 ANWGameMode::ANWGameMode()
 {
 	// Default Pawn Class 지정
-	static ConstructorHelpers::FClassFinder<APawn> DefaultPawnClassRef(TEXT("/Script/Engine.Blueprint'/Game/NeuralWar/Blueprint/BP_CharacterPlayer.BP_CharacterPlayer_C'"));
+	static ConstructorHelpers::FClassFinder<APawn> DefaultPawnClassRef(TEXT("/Game/NeuralWar/Blueprint/BP_CharacterPlayer.BP_CharacterPlayer_C"));
 	if (DefaultPawnClassRef.Class)
 	{
 		DefaultPawnClass = DefaultPawnClassRef.Class;

@@ -90,8 +90,8 @@ void ANWCharacterPlayer::Move(const FInputActionValue& Value)
 	const FVector RightDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 
 	// 이 방향 벡터에 따라 입력을 적용하여 캐릭터 이동
-	AddMovementInput(ForwardDirection, MovementVector.X);
-	AddMovementInput(RightDirection, MovementVector.Y);
+	AddMovementInput(ForwardDirection, MovementVector.Y);
+	AddMovementInput(RightDirection, MovementVector.X);
 }
 
 void ANWCharacterPlayer::Look(const FInputActionValue& Value)
